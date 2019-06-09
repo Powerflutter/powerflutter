@@ -30,6 +30,21 @@ class PowerModel {
   static StreamController<Change> _changes = StreamController.broadcast(sync: true);
   static Stream<Change> get changesStream => _changes.stream;
 
+  static T makeTyped<T>(Map value) {
+    var factory = Power.classFactory.get(T);
+    if (factory != null) {
+      var object = factory();
+      value.forEach((k, v) => object.set(k, v));
+      return object as T;
+    }
+    return null;
+  }
+
+  static disableAllUpdates() {
+    _observations.close();
+    _changes.close();
+  }
+
   final Map<String, dynamic> _values = Map();
   final _state = PowerModelInternalState();
 
@@ -122,15 +137,5 @@ class PowerModel {
     var returnValue = item(this);
     _state.muted = false;
     return returnValue;
-  }
-
-  static T makeTyped<T>(Map value) {
-    var factory = Power.classFactory.get(T);
-    if (factory != null) {
-      var object = factory();
-      value.forEach((k, v) => object.set(k, v));
-      return object as T;
-    }
-    return null;
   }
 }

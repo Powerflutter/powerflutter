@@ -17,7 +17,7 @@ abstract class PowerWidget<T extends PowerModel> extends StatefulWidget {
   Widget build(BuildContext context);
 }
 
-class _PowerWidgetState extends PowerState<PowerWidget> with SingleTickerProviderStateMixin {
+class _PowerWidgetState extends PowerState<PowerWidget> {
   @override
   Widget build(BuildContext context) {
     Widget built;
