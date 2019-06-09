@@ -1,4 +1,6 @@
 name: powerflutter
+author: Tobias Heidingsfeld <Tobias@powerflutter.com>
+homepage: https://github.com/Powerflutter/powerflutter
 description: Powerflutter is an easy to use yet powerful framework for Flutter & Dart focussing on developer productivity
 
 # The following defines the version and build number for your application.
@@ -17,8 +19,8 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  uuid: 2.0.0
-  shared_preferences:
+  uuid: ^2.0.0
+  shared_preferences: ^0.5.3
 
   flutter:
     sdk: flutter
