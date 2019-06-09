@@ -1,0 +1,3 @@
+class PowerModelAnnotation {
+  const PowerModelAnnotation();
+}
