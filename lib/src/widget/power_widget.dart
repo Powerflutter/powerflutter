@@ -27,10 +27,13 @@ class _PowerWidgetState extends PowerState<PowerWidget> {
     try {
       Power.setDI(context);
       built = widget.build(context);
-    } on Object catch (ex) {
-      error = ex;
     }
-    BindingHelper.buildBindableWidgetfinished(this);
+    /*on Object catch (ex) {
+      error = ex;
+    }*/
+     finally {
+      BindingHelper.buildBindableWidgetfinished(this);
+    }
 
     if (error != null) {
       throw error;
