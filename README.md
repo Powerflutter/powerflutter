@@ -6,8 +6,7 @@ Powerflutter wants to be what Rails is for Ruby, the go to Framework that makes 
 
 Powerflutter will in the future give you the option to write your custom server code in dart using the Powerflutter Server Library. 
 
-Furthermore Powerflutter has an optional code generation library
-that will generate any even small boilerplate code and typed references to assets like images, sounds or localizations instead of manually added string based approaches which break easily and dont have compile time checks.
+Furthermore Powerflutter has an optional code generation library that will generate any even so small boilerplate code and typed references to assets like images, sounds or localizations instead of manually added string based approaches which break easily and dont have compile time checks.
 
 
 ## Getting Started
@@ -16,7 +15,7 @@ Examples and gettings Started Guides can be found in the [Powerflutter Examples 
 
 ## Features & Roadmap for 2019
 
-[X] Powerful and easy State management using automatic databinding
+[X] Powerful and easy state management using automatic databinding
 
 [X] Dependency Injection 
 
@@ -66,4 +65,4 @@ Examples and gettings Started Guides can be found in the [Powerflutter Examples 
 
 ## Apps build with Powerflutter
 
-Moves - design your play: [Android](https://play.google.com/store/apps/details?id=com.coachbetter.tacticboard) 
+Moves - design your play: [Android](https://play.google.com/store/apps/details?id=com.coachbetter.tacticboard) [iOS](https://apps.apple.com/us/app/moves-design-your-play/id1458656274?ls=1)
